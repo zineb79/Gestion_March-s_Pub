@@ -1,0 +1,90 @@
+:root {
+  /* Light theme variables */
+  --background-light: #ffffff;
+  --text-light: #000000;
+  --border-light: #d9d9d9;
+  --primary-light: #1890ff;
+  --secondary-light: #f0f2f5;
+  --hover-light: #e6f7ff;
+  
+  /* Dark theme variables */
+  --background-dark: #141414;
+  --text-dark: #ffffff;
+  --border-dark: #434343;
+  --primary-dark: #177ddc;
+  --secondary-dark: #1f1f1f;
+  --hover-dark: #111b26;
+}
+
+/* Light theme */
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+/* Dark theme */
+body[data-theme='dark'] {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Common styles for both themes */
+.app-container {
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+/* Light theme styles */
+.theme-light {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.theme-light .ant-table {
+  background-color: var(--background-light);
+}
+
+.theme-light .ant-modal-content,
+.theme-light .ant-card {
+  background-color: var(--background-light);
+  border-color: var(--border-light);
+}
+
+/* Dark theme styles */
+.theme-dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.theme-dark .ant-table {
+  background-color: var(--background-dark);
+}
+
+.theme-dark .ant-modal-content,
+.theme-dark .ant-card {
+  background-color: var(--background-dark);
+  border-color: var(--border-dark);
+}
+
+/* Form styles */
+.theme-dark .ant-form-item-label > label {
+  color: var(--text-dark);
+}
+
+.theme-dark .ant-input,
+.theme-dark .ant-select-selector {
+  background-color: var(--secondary-dark);
+  border-color: var(--border-dark);
+  color: var(--text-dark);
+}
+
+.theme-light .ant-form-item-label > label {
+  color: var(--text-light);
+}
+
+.theme-light .ant-input,
+.theme-light .ant-select-selector {
+  background-color: var(--background-light);
+  border-color: var(--border-light);
+  color: var(--text-light);
+}
