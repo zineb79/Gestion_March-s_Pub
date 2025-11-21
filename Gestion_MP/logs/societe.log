@@ -1,0 +1,4 @@
+2025-10-24 11:52:18 [http-nio-8080-exec-8] INFO  e.m.g.s.SocieteServiceImpl - Liste des sociétés récupérée : 2 éléments
+2025-10-24 11:52:18 [http-nio-8080-exec-6] INFO  e.m.g.s.SocieteServiceImpl - Liste des sociétés récupérée : 2 éléments
+2025-10-24 11:57:22 [http-nio-8080-exec-6] INFO  e.m.g.s.SocieteServiceImpl - Liste des sociétés récupérée : 2 éléments
+2025-10-24 11:57:22 [http-nio-8080-exec-9] INFO  e.m.g.s.SocieteServiceImpl - Liste des sociétés récupérée : 2 éléments

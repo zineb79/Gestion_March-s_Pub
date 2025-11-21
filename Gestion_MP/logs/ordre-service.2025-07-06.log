@@ -1,0 +1,61 @@
+2025-07-06 16:01:41 [http-nio-8080-exec-1] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 16:01:41 [http-nio-8080-exec-2] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 17:51:46 [http-nio-8080-exec-6] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 17:51:46 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 17:52:12 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 8
+2025-07-06 17:52:12 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 17:52:12 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 18:00:13 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 9
+2025-07-06 18:00:13 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:00:13 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:00:27 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:00:27 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:00:51 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:00:51 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 4 éléments
+2025-07-06 18:03:56 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:03:56 [http-nio-8080-exec-9] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:04:06 [http-nio-8080-exec-3] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:04:06 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:05:31 [http-nio-8080-exec-6] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:05:31 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:05:33 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:05:33 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:06:07 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:06:07 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:06:43 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:06:43 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:27 [http-nio-8080-exec-3] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:27 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:44 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:44 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:53 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:07:53 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:08:26 [http-nio-8080-exec-9] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:08:26 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:09:44 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:09:44 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:09:53 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:09:53 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:10:08 [http-nio-8080-exec-14] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:10:08 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:10:10 [http-nio-8080-exec-9] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:10:10 [http-nio-8080-exec-4] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 18:10:22 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 10
+2025-07-06 18:10:22 [http-nio-8080-exec-8] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments
+2025-07-06 18:10:22 [http-nio-8080-exec-13] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments
+2025-07-06 18:10:26 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments
+2025-07-06 18:10:26 [http-nio-8080-exec-5] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments
+2025-07-06 18:11:08 [http-nio-8080-exec-5] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 11
+2025-07-06 18:11:08 [http-nio-8080-exec-6] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 18:11:08 [http-nio-8080-exec-5] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 18:11:26 [http-nio-8080-exec-5] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 18:11:26 [http-nio-8080-exec-11] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 2 éléments
+2025-07-06 18:11:41 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 12
+2025-07-06 18:11:41 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 18:11:41 [http-nio-8080-exec-10] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 18:14:06 [http-nio-8080-exec-6] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 18:14:06 [http-nio-8080-exec-12] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 3 éléments
+2025-07-06 19:31:47 [http-nio-8080-exec-3] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 19:31:50 [http-nio-8080-exec-9] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 0 éléments
+2025-07-06 19:32:06 [http-nio-8080-exec-7] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service ajouté avec succès : ID = 1
+2025-07-06 19:32:06 [http-nio-8080-exec-8] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments

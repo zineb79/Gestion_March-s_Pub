@@ -1,0 +1,51 @@
+2025-07-08 10:55:57 [http-nio-8080-exec-3] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 10:55:57 [http-nio-8080-exec-8] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 10:59:28 [http-nio-8080-exec-6] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 10:59:28 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:23:04 [http-nio-8080-exec-3] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:23:04 [http-nio-8080-exec-2] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:30:27 [http-nio-8080-exec-4] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:30:27 [http-nio-8080-exec-10] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:33:30 [http-nio-8080-exec-10] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:33:30 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 11:33:57 [http-nio-8080-exec-3] INFO  e.m.g.s.NotificationApprServiceImpl - Notification ajoutée avec succès : numéro d'ordre = A1234
+2025-07-08 11:33:57 [http-nio-8080-exec-3] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:33:57 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:34:14 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:34:14 [http-nio-8080-exec-12] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:37:31 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:37:31 [http-nio-8080-exec-12] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:41:30 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:41:30 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:41:56 [http-nio-8080-exec-11] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:41:56 [http-nio-8080-exec-2] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:42:12 [http-nio-8080-exec-11] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:42:12 [http-nio-8080-exec-8] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:43:18 [http-nio-8080-exec-2] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 11:43:18 [http-nio-8080-exec-12] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 2 éléments
+2025-07-08 12:51:01 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:51:01 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:51:59 [http-nio-8080-exec-6] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:51:59 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:52:05 [http-nio-8080-exec-6] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:52:05 [http-nio-8080-exec-7] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 0 éléments
+2025-07-08 12:52:22 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Notification ajoutée avec succès : numéro d'ordre = A1234
+2025-07-08 12:52:22 [http-nio-8080-exec-7] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 12:52:22 [http-nio-8080-exec-4] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 12:57:44 [http-nio-8080-exec-3] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 12:57:44 [http-nio-8080-exec-11] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 12:58:19 [http-nio-8080-exec-8] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 12:58:19 [http-nio-8080-exec-10] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:00:48 [http-nio-8080-exec-1] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:00:48 [http-nio-8080-exec-5] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:00:48 [http-nio-8080-exec-11] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:00:48 [http-nio-8080-exec-2] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:01:05 [http-nio-8080-exec-1] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:01:05 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:01:23 [http-nio-8080-exec-4] INFO  e.m.g.s.NotificationApprServiceImpl - Notification modifiée avec succès : ID = 1
+2025-07-08 13:01:23 [http-nio-8080-exec-6] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:02:21 [http-nio-8080-exec-8] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:02:21 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:04:55 [http-nio-8080-exec-9] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:04:55 [http-nio-8080-exec-1] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-08 13:04:59 [http-nio-8080-exec-8] INFO  e.m.g.s.NotificationApprServiceImpl - Notification supprimée avec succès : ID = 1

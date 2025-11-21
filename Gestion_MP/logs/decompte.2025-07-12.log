@@ -1,0 +1,10 @@
+2025-07-08 13:08:16 [http-nio-8080-exec-9] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 0 éléments
+2025-07-08 13:08:16 [http-nio-8080-exec-5] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 0 éléments
+2025-07-08 13:08:39 [http-nio-8080-exec-4] INFO  e.m.g.s.DecompteServiceImpl - Décompte ajouté avec succès : A11
+2025-07-08 13:09:24 [http-nio-8080-exec-10] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 1 éléments
+2025-07-08 13:09:24 [http-nio-8080-exec-2] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 1 éléments
+2025-07-08 13:09:28 [http-nio-8080-exec-8] INFO  e.m.g.s.DecompteServiceImpl - Décompte supprimé avec succès : ID 1
+2025-07-08 13:09:51 [http-nio-8080-exec-3] INFO  e.m.g.s.DecompteServiceImpl - Décompte ajouté avec succès : A11
+2025-07-08 13:09:51 [http-nio-8080-exec-3] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 1 éléments
+2025-07-08 13:09:51 [http-nio-8080-exec-2] INFO  e.m.g.s.DecompteServiceImpl - Liste des décomptes récupérée : 1 éléments
+2025-07-08 13:10:00 [http-nio-8080-exec-7] INFO  e.m.g.s.DecompteServiceImpl - Décompte supprimé avec succès : ID 2

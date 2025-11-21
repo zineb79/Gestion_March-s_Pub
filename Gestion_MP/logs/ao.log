@@ -1,0 +1,4 @@
+2025-10-24 11:51:33 [http-nio-8080-exec-1] INFO  e.m.g.s.AppelOffreServiceImpl - Liste des appels d'offre récupérée : 7 éléments
+2025-10-24 11:51:33 [http-nio-8080-exec-3] INFO  e.m.g.s.AppelOffreServiceImpl - Liste des appels d'offre récupérée : 7 éléments
+2025-10-24 11:55:00 [http-nio-8080-exec-6] INFO  e.m.g.s.AppelOffreServiceImpl - Liste des appels d'offre récupérée : 7 éléments
+2025-10-24 11:55:00 [http-nio-8080-exec-9] INFO  e.m.g.s.AppelOffreServiceImpl - Liste des appels d'offre récupérée : 7 éléments

@@ -1,0 +1,7 @@
+2025-07-13 00:15:44 [main] ERROR e.m.g.s.NotificationApprServiceImpl - Échec de la création : données de notification nulles.
+2025-07-13 00:15:44 [main] ERROR e.m.g.s.NotificationApprServiceImpl - Suppression échouée : notification introuvable ID = 99
+2025-07-13 00:15:44 [main] INFO  e.m.g.s.NotificationApprServiceImpl - Notification liée au marché récupérée : marché ID = 1
+2025-07-13 00:15:44 [main] INFO  e.m.g.s.NotificationApprServiceImpl - Liste des notifications récupérée : 1 éléments
+2025-07-13 00:15:44 [main] INFO  e.m.g.s.NotificationApprServiceImpl - Notification modifiée avec succès : ID = 1
+2025-07-13 00:15:44 [main] INFO  e.m.g.s.NotificationApprServiceImpl - Notification récupérée : ID = 1
+2025-07-13 00:15:44 [main] INFO  e.m.g.s.NotificationApprServiceImpl - Notification supprimée avec succès : ID = 1

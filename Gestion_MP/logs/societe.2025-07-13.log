@@ -1,0 +1,9 @@
+2025-07-13 00:15:46 [main] INFO  e.m.g.s.SocieteServiceImpl - Société modifiée avec succès : ID = 1
+2025-07-13 00:15:46 [main] ERROR e.m.g.s.SocieteServiceImpl - Société introuvable : ID = 1
+2025-07-13 00:15:46 [main] INFO  e.m.g.s.SocieteServiceImpl - Société ajoutée avec succès : ID = 1, Raison sociale = EntrepriseX
+2025-07-13 00:15:46 [main] ERROR e.m.g.s.SocieteServiceImpl - Société à modifier introuvable : ID = 1
+2025-07-13 00:15:46 [main] WARN  e.m.g.s.SocieteServiceImpl - Tentative de suppression échouée : société introuvable ID = 1
+2025-07-13 00:15:46 [main] INFO  e.m.g.s.SocieteServiceImpl - Liste des sociétés récupérée : 1 éléments
+2025-07-13 00:15:46 [main] INFO  e.m.g.s.SocieteServiceImpl - Société récupérée par ID : 1
+2025-07-13 00:15:46 [main] ERROR e.m.g.s.SocieteServiceImpl - Échec de l'ajout : objet société null
+2025-07-13 00:15:46 [main] INFO  e.m.g.s.SocieteServiceImpl - Société supprimée avec succès : ID = 1

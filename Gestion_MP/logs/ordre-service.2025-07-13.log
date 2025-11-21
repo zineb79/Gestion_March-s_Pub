@@ -1,0 +1,9 @@
+2025-07-13 00:15:45 [main] ERROR e.m.g.s.OrdreDeServiceImpl - Ordre de service introuvable : ID = 100
+2025-07-13 00:15:45 [main] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service modifié avec succès : ID = 1
+2025-07-13 00:15:45 [main] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service récupéré : ID = 5
+2025-07-13 00:15:45 [main] ERROR e.m.g.s.OrdreDeServiceImpl - Modification échouée : ordre de service introuvable ID = 100
+2025-07-13 00:15:45 [main] ERROR e.m.g.s.OrdreDeServiceImpl - Le marché avec ID 1 est introuvable
+2025-07-13 00:15:45 [main] INFO  e.m.g.s.OrdreDeServiceImpl - Liste des ordres de service récupérée : 1 éléments
+2025-07-13 00:15:45 [main] INFO  e.m.g.s.OrdreDeServiceImpl - Ordre de service supprimé avec succès : ID = 1
+2025-07-13 00:15:45 [main] ERROR e.m.g.s.OrdreDeServiceImpl - Échec de l'ajout : Ordre de service null
+2025-07-13 00:15:45 [main] WARN  e.m.g.s.OrdreDeServiceImpl - Suppression échouée : ordre de service inexistant ID = 99

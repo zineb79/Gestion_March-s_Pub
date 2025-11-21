@@ -1,0 +1,228 @@
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/configuration/AppInit.java b/src/main/java/ensaa/ministere/gestionmarchepublic/configuration/AppInit.java[m
+[1mindex 2c39d09..be2bcab 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/configuration/AppInit.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/configuration/AppInit.java[m
+[36m@@ -1,6 +1,6 @@[m
+ package ensaa.ministere.gestionmarchepublic.configuration;[m
+ [m
+[31m-import ensaa.ministere.gestionmarchepublic.models.Role;[m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.enums.Role;[m
+ import ensaa.ministere.gestionmarchepublic.models.Utilisateur;[m
+ import ensaa.ministere.gestionmarchepublic.repositories.UserRepository;[m
+ import org.springframework.beans.factory.annotation.Autowired;[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/AuthController.java b/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/AuthController.java[m
+[1mindex 90bc678..4878552 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/AuthController.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/AuthController.java[m
+[36m@@ -11,25 +11,17 @@[m [mimport io.swagger.v3.oas.annotations.tags.Tag;[m
+ import org.springframework.beans.factory.annotation.Autowired;[m
+ import org.springframework.http.HttpStatus;[m
+ import org.springframework.http.ResponseEntity;[m
+[31m-import org.springframework.security.authentication.AuthenticationManager;[m
+[31m-import org.springframework.security.authentication.BadCredentialsException;[m
+[31m-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;[m
+ import org.springframework.security.core.userdetails.UserDetails;[m
+ import org.springframework.security.core.userdetails.UserDetailsService;[m
+[31m-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;[m
+ import org.springframework.security.crypto.password.PasswordEncoder;[m
+ import org.springframework.web.bind.annotation.*;[m
+ [m
+ import java.util.Optional;[m
+ [m
+[31m-[m
+[31m-//@CrossOrigin(origins = "http://localhost:3000")[m
+ @RestController[m
+ @Tag(name = "Authentification",description = "permettre une Authentification avec JWT")[m
+ public class AuthController {[m
+ [m
+[31m-    @Autowired[m
+[31m-    private AuthenticationManager authenticationManager;[m
+ [m
+     @Autowired[m
+     private UserDetailsService userDetailsService;[m
+[36m@@ -72,19 +64,7 @@[m [mpublic class AuthController {[m
+     }[m
+ }[m
+ [m
+[31m-//        System.out.println("Login attempt: " + request.getEmail());// print statments for debbuging[m
+[31m-//        try{[m
+[31m-//        authenticationManager.authenticate([m
+[31m-//                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())[m
+[31m-//        );[m
+[31m-//[m
+[31m-//        UserDetails userDetails = userDetailsService.loadUserByUsername(request.getEmail());[m
+[31m-//        String token =  jwtUtil.generateToken(userDetails.getUsername());[m
+[31m-//        return ResponseEntity.ok(new AuthResponse(token));[m
+[31m-//    }catch (BadCredentialsException e){[m
+[31m-//            System.out.println("Invalid credentials for: " + request.getEmail());// print statments for debbuging[m
+[31m-//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("invalid email or password");[m
+[31m-//        }[m
+[41m+[m
+ [m
+ [m
+ [m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/UserController.java b/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/UserController.java[m
+[1mindex d559256..9878383 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/UserController.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/controllers/UserController.java[m
+[36m@@ -1,6 +1,5 @@[m
+ package ensaa.ministere.gestionmarchepublic.controllers;[m
+ [m
+[31m-import ensaa.ministere.gestionmarchepublic.DTO.AuthRequest;[m
+ import ensaa.ministere.gestionmarchepublic.DTO.AuthResponse;[m
+ import org.springframework.security.access.prepost.PreAuthorize;[m
+ import org.springframework.web.bind.annotation.GetMapping;[m
+[36m@@ -10,7 +9,7 @@[m [mimport org.springframework.web.bind.annotation.RestController;[m
+ @RestController[m
+ public class UserController {[m
+     @GetMapping("/user/data")[m
+[31m-    //@PreAuthorize("hasAuthority('SECRETAIRE') or hasAuthority('CHEF_DE_SERVICE')") // Assurez-vous que l'utilisateur a le bon rôle[m
+[32m+[m[32m    @PreAuthorize("hasAuthority('SECRETAIRE') or hasAuthority('CHEF_DE_SERVICE')") // Assurez-vous que l'utilisateur a le bon rôle[m
+     public String getUserData(@RequestBody AuthResponse authResponse) {[m
+         // Exemple de données que tu veux renvoyer à l'utilisateur[m
+         return "Voici les données utilisateur protégées"+authResponse.getToken().charAt(2);[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Role.java b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Role.java[m
+[1mindex 8ca3f3e..1068e4b 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Role.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Role.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package ensaa.ministere.gestionmarchepublic.models;[m
+[32m+[m[32mpackage ensaa.ministere.gestionmarchepublic.enums;[m
+ [m
+ public enum Role {[m
+     SECRETAIRE,[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutAO.java b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutAO.java[m
+[1mindex e63f167..f568286 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutAO.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutAO.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package ensaa.ministere.gestionmarchepublic.models;[m
+[32m+[m[32mpackage ensaa.ministere.gestionmarchepublic.enums;[m
+ [m
+ public enum StatutAO {[m
+ }[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutMarche.java b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutMarche.java[m
+[1mindex 370a3e6..19e65ff 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutMarche.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/StatutMarche.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package ensaa.ministere.gestionmarchepublic.models;[m
+[32m+[m[32mpackage ensaa.ministere.gestionmarchepublic.enums;[m
+ [m
+ public enum StatutMarche {[m
+     EnAttente,[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/TypeMarche.java b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/TypeMarche.java[m
+[1mindex bcf914f..6398776 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/TypeMarche.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/TypeMarche.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package ensaa.ministere.gestionmarchepublic.models;[m
+[32m+[m[32mpackage ensaa.ministere.gestionmarchepublic.enums;[m
+ [m
+ public enum TypeMarche {[m
+     TRAVAUX,[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Type_OS.java b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Type_OS.java[m
+[1mindex a12c0e7..a1d81be 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Type_OS.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/enums/Type_OS.java[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-package ensaa.ministere.gestionmarchepublic.models;[m
+[32m+[m[32mpackage ensaa.ministere.gestionmarchepublic.enums;[m
+ [m
+ public enum Type_OS {[m
+     COMMENCEMENT,[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/models/AppelOffre.java b/src/main/java/ensaa/ministere/gestionmarchepublic/models/AppelOffre.java[m
+[1mindex 4e011aa..19077a5 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/models/AppelOffre.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/models/AppelOffre.java[m
+[36m@@ -1,5 +1,6 @@[m
+ package ensaa.ministere.gestionmarchepublic.models;[m
+ [m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.enums.StatutAO;[m
+ import jakarta.persistence.*;[m
+ import lombok.Getter;[m
+ import lombok.NoArgsConstructor;[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/models/Marche.java b/src/main/java/ensaa/ministere/gestionmarchepublic/models/Marche.java[m
+[1mindex 6b7d299..c089a60 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/models/Marche.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/models/Marche.java[m
+[36m@@ -1,5 +1,7 @@[m
+ package ensaa.ministere.gestionmarchepublic.models;[m
+ [m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.enums.StatutMarche;[m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.enums.TypeMarche;[m
+ import jakarta.persistence.*;[m
+ import lombok.Getter;[m
+ import lombok.NoArgsConstructor;[m
+[36m@@ -15,15 +17,17 @@[m [mpublic class Marche {[m
+     @Id[m
+     @GeneratedValue(strategy = GenerationType.IDENTITY)[m
+     private int id_Marche;[m
+[32m+[m
+     private TypeMarche type_Marche;[m
+     private String objet_marche;[m
+[31m-    private StatutMarche statut_Marche;[m
+[32m+[m[32m    private StatutMarche statut;[m
+[32m+[m
+     @OneToMany(mappedBy = "marche_AO",fetch = FetchType.EAGER)[m
+     private List<AppelOffre> appel_offres;[m
+ [m
+     public Marche(TypeMarche type_Marche, String objet_marche, StatutMarche statut_Marche) {[m
+         this.type_Marche = type_Marche;[m
+         this.objet_marche = objet_marche;[m
+[31m-        this.statut_Marche = statut_Marche;[m
+[32m+[m[32m        this.statut = statut_Marche;[m
+     }[m
+ }[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/models/OrdreDeService.java b/src/main/java/ensaa/ministere/gestionmarchepublic/models/OrdreDeService.java[m
+[1mindex b46ff15..2fe4beb 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/models/OrdreDeService.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/models/OrdreDeService.java[m
+[36m@@ -1,5 +1,6 @@[m
+ package ensaa.ministere.gestionmarchepublic.models;[m
+ [m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.enums.Type_OS;[m
+ import jakarta.persistence.Entity;[m
+ import jakarta.persistence.GeneratedValue;[m
+ import jakarta.persistence.GenerationType;[m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/security/SecurityConfig.java b/src/main/java/ensaa/ministere/gestionmarchepublic/security/SecurityConfig.java[m
+[1mindex 3c1565a..24650b2 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/security/SecurityConfig.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/security/SecurityConfig.java[m
+[36m@@ -1,7 +1,5 @@[m
+ package ensaa.ministere.gestionmarchepublic.security;[m
+ [m
+[31m-import ensaa.ministere.gestionmarchepublic.models.Role;[m
+[31m-import ensaa.ministere.gestionmarchepublic.security.JwtFilter;[m
+ import org.springframework.context.annotation.Bean;[m
+ import org.springframework.context.annotation.Configuration;[m
+ import org.springframework.security.authentication.AuthenticationManager;[m
+[36m@@ -13,8 +11,6 @@[m [mimport org.springframework.security.crypto.password.PasswordEncoder;[m
+ import org.springframework.security.web.SecurityFilterChain;[m
+ import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;[m
+ import org.springframework.web.cors.CorsConfiguration;[m
+[31m-import org.springframework.web.servlet.config.annotation.CorsRegistry;[m
+[31m-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;[m
+ [m
+ import java.util.List;[m
+ [m
+[1mdiff --git a/src/main/java/ensaa/ministere/gestionmarchepublic/services/MarcheService.java b/src/main/java/ensaa/ministere/gestionmarchepublic/services/MarcheService.java[m
+[1mindex f6b84a1..fcf967c 100644[m
+[1m--- a/src/main/java/ensaa/ministere/gestionmarchepublic/services/MarcheService.java[m
+[1m+++ b/src/main/java/ensaa/ministere/gestionmarchepublic/services/MarcheService.java[m
+[36m@@ -1,4 +1,15 @@[m
+ package ensaa.ministere.gestionmarchepublic.services;[m
+ [m
+[32m+[m[32mimport ensaa.ministere.gestionmarchepublic.models.Marche;[m
+[32m+[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+ public interface MarcheService {[m
+[32m+[m[32m    public void creerMarche(Marche marche);[m
+[32m+[m[32m    public void modifierMarche(Marche marche);[m
+[32m+[m[32m    public void supprimerMarche(Marche marche);[m
+[32m+[m[32m    public void supprimerAllMarches();[m
+[32m+[m[32m    public Marche getMarcheById(int id);[m
+[32m+[m[32m    public Marche getMarcheByName(String name);[m
+[32m+[m[32m    public List<Marche> getAllMarches();[m
+ }[m

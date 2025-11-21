@@ -1,0 +1,4 @@
+2025-06-19 16:18:56 [main] ERROR e.m.g.s.PvReceptionServiceImpl - Ajout PV échoué : Marché introuvable ID = 1
+2025-06-19 16:18:56 [main] INFO  e.m.g.s.PvReceptionServiceImpl - PV de réception ajouté avec succès : ID = 100
+2025-06-19 16:18:56 [main] INFO  e.m.g.s.PvReceptionServiceImpl - PV modifié avec succès : ID = 100
+2025-06-19 16:18:56 [main] INFO  e.m.g.s.PvReceptionServiceImpl - PV supprimé : ID = 100
